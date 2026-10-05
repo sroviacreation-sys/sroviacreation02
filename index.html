@@ -1,0 +1,1259 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Srovia Creation • Luxury Creative Studio & Premium Frame Atelier</title>
+  <meta name="description" content="Srovia Creation is a premium Indian creative studio offering branding, UI/UX design, website development, motion graphics, and heirloom-grade custom photo frames." />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            'accent-gold': '#D4AF37',
+            'gold-light': '#F5D77F',
+            'gold-dark': '#9B722B',
+            'charcoal-dark': '#0B0B0C',
+            'charcoal-surface': '#141416',
+            'charcoal-card': '#18181B',
+            'ivory-light': '#FDFCF7',
+            'ivory-cream': '#F4EFE6'
+          },
+          fontFamily: {
+            serif: ['Cinzel', 'Cormorant Garamond', 'serif'],
+            editorial: ['Cormorant Garamond', 'serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom Luxury Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="bg-[#0B0B0C] text-[#F4EFE6] font-sans antialiased selection:bg-[#D4AF37] selection:text-[#0B0B0C]">
+
+  <!-- Top Announcement / Studio Status Bar -->
+  <div class="bg-gradient-to-r from-[#14120E] via-[#241E15] to-[#14120E] border-b border-[#D4AF37]/20 py-2 px-4 text-xs text-stone-300">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-1 text-center sm:text-left">
+      <div class="flex items-center space-x-2">
+        <span class="inline-block w-2 h-2 rounded-full bg-accent-gold animate-pulse"></span>
+        <span class="tracking-wide">Bespoke Creative Studio & Heirloom Custom Framing • Crafted in India</span>
+      </div>
+      <div class="flex items-center space-x-4 text-[11px] text-stone-400">
+        <span>Hours: Mon - Sat 10AM - 8PM IST</span>
+        <span class="hidden md:inline">•</span>
+        <a href="https://wa.me/919876543210" target="_blank" class="text-accent-gold hover:underline flex items-center space-x-1">
+          <span>WhatsApp Consultation: +91 98765 43210</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- STICKY HEADER -->
+  <header id="main-header" class="sticky top-0 z-40 transition-all duration-300 bg-[#0B0B0C]/80 backdrop-blur-md border-b border-stone-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20 md:h-24">
+        
+        <!-- Logo -->
+        <a href="#hero" class="flex items-center space-x-3 group">
+          <div class="h-12 md:h-16 flex items-center">
+            <img src="logo.svg" alt="SROVIA CREATION" class="h-10 md:h-14 w-auto filter drop-shadow-[0_2px_10px_rgba(212,175,55,0.25)] transition-transform duration-300 group-hover:scale-105" />
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden lg:flex items-center space-x-8 text-xs uppercase tracking-widest font-medium">
+          <a href="#hero" class="desktop-nav-link text-stone-300 hover:text-accent-gold transition-colors py-2">Home</a>
+          <a href="#services" class="desktop-nav-link text-stone-300 hover:text-accent-gold transition-colors py-2">Services</a>
+          <a href="#frame-collection" class="desktop-nav-link text-stone-300 hover:text-accent-gold transition-colors py-2">Frame Collection</a>
+          <a href="#custom-frame" class="desktop-nav-link text-stone-300 hover:text-accent-gold transition-colors py-2 flex items-center space-x-1">
+            <span>Custom Studio</span>
+            <span class="bg-accent-gold/20 text-accent-gold text-[9px] px-1.5 py-0.5 rounded font-mono">Live</span>
+          </a>
+          <a href="#portfolio" class="desktop-nav-link text-stone-300 hover:text-accent-gold transition-colors py-2">Portfolio</a>
+          <a href="#about" class="desktop-nav-link text-stone-300 hover:text-accent-gold transition-colors py-2">About</a>
+          <a href="#gallery" class="desktop-nav-link text-stone-300 hover:text-accent-gold transition-colors py-2">Gallery</a>
+          <a href="#contact" class="desktop-nav-link text-stone-300 hover:text-accent-gold transition-colors py-2">Contact</a>
+        </nav>
+
+        <!-- CTA & Actions -->
+        <div class="hidden sm:flex items-center space-x-4">
+          <a href="https://wa.me/919876543210" target="_blank" class="p-2.5 rounded-full border border-stone-700 text-stone-300 hover:text-[#25D366] hover:border-[#25D366] transition-colors" title="Chat on WhatsApp">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+          </a>
+          <a href="#contact" class="btn-shimmer px-5 py-2.5 rounded-full text-charcoal-dark font-bold text-xs uppercase tracking-wider shadow-lg">
+            Start Your Project
+          </a>
+        </div>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobile-menu-toggle" class="lg:hidden p-2 rounded-lg text-stone-300 hover:text-accent-gold focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobile-menu" class="fixed inset-y-0 right-0 z-50 w-full max-w-xs bg-[#0F0F12] border-l border-stone-800 p-6 transform translate-x-full transition-transform duration-300 ease-in-out lg:hidden flex flex-col justify-between shadow-2xl">
+    <div>
+      <div class="flex items-center justify-between pb-6 border-b border-stone-800">
+        <img src="assets/logo.svg" alt="SROVIA CREATION" class="h-10 w-auto" />
+        <button id="close-mobile-menu" onclick="document.getElementById('mobile-menu').classList.add('translate-x-full'); document.body.classList.remove('overflow-hidden');" class="text-stone-400 hover:text-white p-2">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+      <nav class="flex flex-col space-y-4 py-8 text-sm uppercase tracking-widest font-medium">
+        <a href="#hero" class="mobile-nav-link text-stone-300 hover:text-accent-gold">Home</a>
+        <a href="#services" class="mobile-nav-link text-stone-300 hover:text-accent-gold">Services</a>
+        <a href="#frame-collection" class="mobile-nav-link text-stone-300 hover:text-accent-gold">Frame Collection</a>
+        <a href="#custom-frame" class="mobile-nav-link text-stone-300 hover:text-accent-gold">Custom Frame Studio</a>
+        <a href="#portfolio" class="mobile-nav-link text-stone-300 hover:text-accent-gold">Portfolio</a>
+        <a href="#about" class="mobile-nav-link text-stone-300 hover:text-accent-gold">About Studio</a>
+        <a href="#gallery" class="mobile-nav-link text-stone-300 hover:text-accent-gold">Gallery</a>
+        <a href="#contact" class="mobile-nav-link text-stone-300 hover:text-accent-gold">Contact</a>
+      </nav>
+    </div>
+    <div class="space-y-3 pt-6 border-t border-stone-800">
+      <a href="#contact" class="btn-shimmer block text-center w-full py-3 rounded-xl text-charcoal-dark font-bold text-xs uppercase tracking-wider">
+        Start Your Project
+      </a>
+      <a href="https://wa.me/919876543210" target="_blank" class="block text-center w-full py-2.5 rounded-xl border border-[#25D366]/40 text-[#25D366] text-xs font-semibold">
+        WhatsApp Consultation
+      </a>
+    </div>
+  </div>
+
+  <!-- HERO SECTION -->
+  <section id="hero" class="relative pt-12 pb-20 md:pt-20 md:pb-32 overflow-hidden bg-mandala-pattern">
+    <!-- Ambient Gold Glow Orbs in background -->
+    <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-accent-gold/10 rounded-full blur-[140px] pointer-events-none"></div>
+    <div class="absolute -top-20 left-10 w-96 h-96 bg-[#9B722B]/10 rounded-full blur-[120px] pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        
+        <!-- Left Column: Typography & CTAs -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          
+          <div class="inline-flex items-center space-x-2.5 px-4 py-1.5 rounded-full bg-stone-900/90 border border-accent-gold/30 text-xs text-stone-300 backdrop-blur-md">
+            <span class="text-accent-gold">✦</span>
+            <span class="uppercase tracking-widest font-medium text-[11px]">Bespoke Creative Studio & Frame Atelier</span>
+          </div>
+
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-stone-100 tracking-tight leading-[1.15]">
+            Designing Brands.<br/>
+            <span class="text-gold-gradient">Building Digital Experiences.</span><br/>
+            Framing Memories.
+          </h1>
+
+          <p class="text-base sm:text-lg text-stone-300/90 max-w-2xl font-normal leading-relaxed mx-auto lg:mx-0">
+            Creative design, digital experiences and premium custom frames crafted with elegance and purpose.
+          </p>
+
+          <!-- Action Buttons -->
+          <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+            <a href="#portfolio" class="btn-shimmer w-full sm:w-auto px-8 py-4 rounded-xl text-charcoal-dark font-bold text-sm uppercase tracking-wider text-center shadow-xl">
+              Explore Our Work
+            </a>
+            <a href="#frame-collection" class="w-full sm:w-auto px-8 py-4 rounded-xl border border-accent-gold/40 hover:border-accent-gold text-stone-100 hover:text-accent-gold hover:bg-accent-gold/5 font-semibold text-sm uppercase tracking-wider text-center transition-all">
+              View Frame Collection
+            </a>
+          </div>
+
+          <!-- Studio Credibility Pillars -->
+          <div class="pt-8 border-t border-stone-800/80 grid grid-cols-3 gap-4 text-center lg:text-left">
+            <div>
+              <div class="text-lg md:text-xl font-serif font-bold text-accent-gold">100%</div>
+              <div class="text-[11px] text-stone-400 uppercase tracking-wider mt-0.5">Bespoke Design</div>
+            </div>
+            <div>
+              <div class="text-lg md:text-xl font-serif font-bold text-accent-gold">Archival</div>
+              <div class="text-[11px] text-stone-400 uppercase tracking-wider mt-0.5">Museum Quality</div>
+            </div>
+            <div>
+              <div class="text-lg md:text-xl font-serif font-bold text-accent-gold">Pan-India</div>
+              <div class="text-[11px] text-stone-400 uppercase tracking-wider mt-0.5">Safe Delivery</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Premium Hero Visual Showcase Stage (Logo + 3D Frame + Design + UI/UX + Indian Motifs) -->
+        <div class="lg:col-span-5 relative" id="hero-visual-stage">
+          <div id="hero-3d-card" class="relative mx-auto max-w-md lg:max-w-none transition-transform duration-500 ease-out">
+            
+            <!-- Background Decorative Indian Mandala Ring -->
+            <div class="absolute -inset-6 border border-accent-gold/20 rounded-full animate-spin [animation-duration:60s] pointer-events-none opacity-40"></div>
+            <div class="absolute -inset-12 border border-accent-gold/10 rounded-full pointer-events-none opacity-30"></div>
+
+            <!-- Central Luxury Showcase Frame (3D Perspective) -->
+            <div class="relative bg-gradient-to-br from-[#1C1814] to-[#0E0D0C] p-4 sm:p-6 rounded-3xl border border-accent-gold/40 shadow-2xl shadow-black/80">
+              
+              <!-- Real Brand Crest Badge Header -->
+              <div class="flex items-center justify-between pb-4 border-b border-stone-800">
+                <div class="flex items-center space-x-2">
+                  <span class="w-2.5 h-2.5 rounded-full bg-accent-gold"></span>
+                  <span class="text-xs uppercase font-mono tracking-widest text-stone-300">Srovia Creation Atelier</span>
+                </div>
+                <span class="text-[10px] font-mono text-accent-gold bg-accent-gold/10 px-2.5 py-0.5 rounded-full border border-accent-gold/30">Artisanal Suite</span>
+              </div>
+
+              <!-- Intertwined Visual Stack -->
+              <div class="relative mt-4 space-y-4">
+                
+                <!-- Main Gilded Picture Frame Element -->
+                <div class="relative aspect-[4/3] rounded-2xl overflow-hidden border-[12px] border-[#D4AF37] shadow-2xl bg-stone-900 group">
+                  <img 
+                    src="logo.svg" 
+                    alt="Luxury Frame Artwork" 
+                    class="w-full h-full object-cover"
+                  />
+                  <!-- Inner Mat Board Shadow -->
+                  <div class="absolute inset-0 ring-4 ring-black/40 ring-inset"></div>
+                  <!-- Gold Plaque Mockup -->
+                  <div class="absolute bottom-2 left-1/2 -translate-x-1/2 custom-plaque-badge text-[9px]">
+                    Srovia Masterpiece • Archival 310gsm
+                  </div>
+                </div>
+
+                <!-- Floating UI/UX Screen Mockup Overlay -->
+                <div class="absolute -bottom-6 -left-6 w-48 sm:w-56 bg-[#161619]/90 backdrop-blur-xl border border-accent-gold/40 rounded-xl p-3 shadow-2xl transform -rotate-3 hover:rotate-0 transition-transform">
+                  <div class="flex items-center justify-between mb-2">
+                    <span class="text-[10px] font-mono text-accent-gold uppercase">Digital UI/UX</span>
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                  </div>
+                  <div class="h-2 w-24 bg-stone-700 rounded-full mb-1.5"></div>
+                  <div class="h-2 w-32 bg-stone-800 rounded-full mb-3"></div>
+                  <div class="flex items-center justify-between text-[10px] text-stone-300">
+                    <span>Interaction Design</span>
+                    <span class="text-accent-gold font-bold">Figma Pro</span>
+                  </div>
+                </div>
+
+                <!-- Floating Branding Card Mockup Overlay -->
+                <div class="absolute -top-6 -right-4 w-44 sm:w-48 bg-[#1A1815]/95 backdrop-blur-xl border border-[#D4AF37]/50 rounded-xl p-3 shadow-2xl transform rotate-3 hover:rotate-0 transition-transform">
+                  <div class="text-[10px] font-mono text-stone-400 uppercase">Brand Identity</div>
+                  <div class="text-xs font-serif font-bold text-accent-gold mt-0.5">SROVIA CREATION</div>
+                  <div class="text-[9px] text-stone-400 mt-1">Design • Digital • Print</div>
+                </div>
+
+              </div>
+
+              <!-- Footer details -->
+              <div class="pt-6 mt-6 border-t border-stone-800/80 flex items-center justify-between text-xs text-stone-400">
+                <span class="flex items-center space-x-1.5">
+                  <svg class="w-3.5 h-3.5 text-accent-gold" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  <span>Handcrafted Quality</span>
+                </span>
+                <span class="font-mono text-accent-gold text-[11px]">Bespoke Order</span>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION ("What We Create") -->
+  <section id="services" class="py-24 bg-[#0E0E10] border-t border-b border-stone-800/80 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+        <div class="divider-gold-ornament">
+          <span class="text-xs uppercase tracking-widest text-accent-gold font-mono font-medium">Core Disciplines</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-stone-100">
+          What We Create
+        </h2>
+        <p class="text-sm sm:text-base text-stone-400 leading-relaxed">
+          From brand strategy and digital interfaces to heirloom physical framing, we unite modern design precision with traditional craftsmanship.
+        </p>
+      </div>
+
+      <!-- 8 Premium Service Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Service 1: Branding & Logo Design -->
+        <div class="glass-card glass-card-hover p-6 rounded-2xl flex flex-col justify-between group">
+          <div class="space-y-4">
+            <div class="w-12 h-12 rounded-xl bg-accent-gold/10 border border-accent-gold/30 flex items-center justify-center text-accent-gold group-hover:bg-accent-gold group-hover:text-charcoal-dark transition-all duration-300">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/></svg>
+            </div>
+            <div class="text-[11px] font-mono text-stone-500">01 / BRANDING</div>
+            <h3 class="text-lg font-serif font-bold text-stone-100 group-hover:text-accent-gold transition-colors">
+              Branding & Logo Design
+            </h3>
+            <p class="text-xs text-stone-400 leading-relaxed">
+              Bespoke visual identities, monogram marks, brand guidelines, color systems, and timeless typography.
+            </p>
+          </div>
+          <div class="pt-5 mt-4 border-t border-stone-800/80 flex items-center justify-between text-xs">
+            <span class="text-stone-500">Logos • Guidelines</span>
+            <a href="#contact" class="text-accent-gold font-medium hover:underline flex items-center space-x-1">
+              <span>Inquire</span>
+              <span>→</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 2: Graphic Design -->
+        <div class="glass-card glass-card-hover p-6 rounded-2xl flex flex-col justify-between group">
+          <div class="space-y-4">
+            <div class="w-12 h-12 rounded-xl bg-accent-gold/10 border border-accent-gold/30 flex items-center justify-center text-accent-gold group-hover:bg-accent-gold group-hover:text-charcoal-dark transition-all duration-300">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+            </div>
+            <div class="text-[11px] font-mono text-stone-500">02 / GRAPHIC</div>
+            <h3 class="text-lg font-serif font-bold text-stone-100 group-hover:text-accent-gold transition-colors">
+              Graphic Design
+            </h3>
+            <p class="text-xs text-stone-400 leading-relaxed">
+              Editorial brochures, luxury catalogs, exhibition collateral, vector illustrations, and marketing assets.
+            </p>
+          </div>
+          <div class="pt-5 mt-4 border-t border-stone-800/80 flex items-center justify-between text-xs">
+            <span class="text-stone-500">Print • Digital</span>
+            <a href="#contact" class="text-accent-gold font-medium hover:underline flex items-center space-x-1">
+              <span>Inquire</span>
+              <span>→</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 3: UI/UX Design -->
+        <div class="glass-card glass-card-hover p-6 rounded-2xl flex flex-col justify-between group">
+          <div class="space-y-4">
+            <div class="w-12 h-12 rounded-xl bg-accent-gold/10 border border-accent-gold/30 flex items-center justify-center text-accent-gold group-hover:bg-accent-gold group-hover:text-charcoal-dark transition-all duration-300">
+              <svg class="w-6 h-6" fill="none" stroke="cu rrentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
+            </div>
+            <div class="text-[11px] font-mono text-stone-500">03 / PRODUCT UI</div>
+            <h3 class="text-lg font-serif font-bold text-stone-100 group-hover:text-accent-gold transition-colors">
+              UI/UX Design
+            </h3>
+            <p class="text-xs text-stone-400 leading-relaxed">
+              Human-centered web & mobile interfaces, dark luxury aesthetics, design systems, and wireframes.
+            </p>
+          </div>
+          <div class="pt-5 mt-4 border-t border-stone-800/80 flex items-center justify-between text-xs">
+            <span class="text-stone-500">Apps • Interfaces</span>
+            <a href="#contact" class="text-accent-gold font-medium hover:underline flex items-center space-x-1">
+              <span>Inquire</span>
+              <span>→</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 4: Website Design & Development -->
+        <div class="glass-card glass-card-hover p-6 rounded-2xl flex flex-col justify-between group">
+          <div class="space-y-4">
+            <div class="w-12 h-12 rounded-xl bg-accent-gold/10 border border-accent-gold/30 flex items-center justify-center text-accent-gold group-hover:bg-accent-gold group-hover:text-charcoal-dark transition-all duration-300">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+            </div>
+            <div class="text-[11px] font-mono text-stone-500">04 / WEB DIGITAL</div>
+            <h3 class="text-lg font-serif font-bold text-stone-100 group-hover:text-accent-gold transition-colors">
+              Website Design & Dev
+            </h3>
+            <p class="text-xs text-stone-400 leading-relaxed">
+              High-performance bespoke brand websites, luxury e-commerce, smooth animations, and responsive layouts.
+            </p>
+          </div>
+          <div class="pt-5 mt-4 border-t border-stone-800/80 flex items-center justify-between text-xs">
+            <span class="text-stone-500">Web • E-Com</span>
+            <a href="#contact" class="text-accent-gold font-medium hover:underline flex items-center space-x-1">
+              <span>Inquire</span>
+              <span>→</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 5: Motion Graphics & Logo Animation -->
+        <div class="glass-card glass-card-hover p-6 rounded-2xl flex flex-col justify-between group">
+          <div class="space-y-4">
+            <div class="w-12 h-12 rounded-xl bg-accent-gold/10 border border-accent-gold/30 flex items-center justify-center text-accent-gold group-hover:bg-accent-gold group-hover:text-charcoal-dark transition-all duration-300">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            </div>
+            <div class="text-[11px] font-mono text-stone-500">05 / MOTION</div>
+            <h3 class="text-lg font-serif font-bold text-stone-100 group-hover:text-accent-gold transition-colors">
+              Motion & Animation
+            </h3>
+            <p class="text-xs text-stone-400 leading-relaxed">
+              Cinematic 3D logo reveals, video reels, kinetic typography, and broadcast-ready motion graphics.
+            </p>
+          </div>
+          <div class="pt-5 mt-4 border-t border-stone-800/80 flex items-center justify-between text-xs">
+            <span class="text-stone-500">3D • Video</span>
+            <a href="#contact" class="text-accent-gold font-medium hover:underline flex items-center space-x-1">
+              <span>Inquire</span>
+              <span>→</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 6: Social Media Design -->
+        <div class="glass-card glass-card-hover p-6 rounded-2xl flex flex-col justify-between group">
+          <div class="space-y-4">
+            <div class="w-12 h-12 rounded-xl bg-accent-gold/10 border border-accent-gold/30 flex items-center justify-center text-accent-gold group-hover:bg-accent-gold group-hover:text-charcoal-dark transition-all duration-300">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+            </div>
+            <div class="text-[11px] font-mono text-stone-500">06 / SOCIAL CREATIVES</div>
+            <h3 class="text-lg font-serif font-bold text-stone-100 group-hover:text-accent-gold transition-colors">
+              Social Media Design
+            </h3>
+            <p class="text-xs text-stone-400 leading-relaxed">
+              High-converting social campaigns, editorial Instagram grids, ad creatives, and festive story suites.
+            </p>
+          </div>
+          <div class="pt-5 mt-4 border-t border-stone-800/80 flex items-center justify-between text-xs">
+            <span class="text-stone-500">Instagram • Ads</span>
+            <a href="#contact" class="text-accent-gold font-medium hover:underline flex items-center space-x-1">
+              <span>Inquire</span>
+              <span>→</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 7: Premium Photo Frames -->
+        <div class="glass-card glass-card-hover p-6 rounded-2xl flex flex-col justify-between group border-accent-gold/40">
+          <div class="space-y-4">
+            <div class="w-12 h-12 rounded-xl bg-accent-gold/20 border border-accent-gold/50 flex items-center justify-center text-accent-gold group-hover:bg-accent-gold group-hover:text-charcoal-dark transition-all duration-300">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v14a1 1 0 01-1 1H5a1 1 0 01-1-1V5z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M8 8h8v8H8z"/></svg>
+            </div>
+            <div class="text-[11px] font-mono text-accent-gold">07 / ATELIER FRAMING</div>
+            <h3 class="text-lg font-serif font-bold text-stone-100 group-hover:text-accent-gold transition-colors">
+              Premium Photo Frames
+            </h3>
+            <p class="text-xs text-stone-400 leading-relaxed">
+              Solid teakwood, gold leafing, float acrylic, and museum glass frames handcrafted to heirloom standards.
+            </p>
+          </div>
+          <div class="pt-5 mt-4 border-t border-stone-800/80 flex items-center justify-between text-xs">
+            <span class="text-accent-gold">Hardwoods • Gold</span>
+            <a href="#frame-collection" class="text-accent-gold font-medium hover:underline flex items-center space-x-1">
+              <span>Explore</span>
+              <span>→</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 8: Personalized Gifts -->
+        <div class="glass-card glass-card-hover p-6 rounded-2xl flex flex-col justify-between group">
+          <div class="space-y-4">
+            <div class="w-12 h-12 rounded-xl bg-accent-gold/10 border border-accent-gold/30 flex items-center justify-center text-accent-gold group-hover:bg-accent-gold group-hover:text-charcoal-dark transition-all duration-300">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"/></svg>
+            </div>
+            <div class="text-[11px] font-mono text-stone-500">08 / BESPOKE GIFTS</div>
+            <h3 class="text-lg font-serif font-bold text-stone-100 group-hover:text-accent-gold transition-colors">
+              Personalized Gifts
+            </h3>
+            <p class="text-xs text-stone-400 leading-relaxed">
+              Custom engraved memory plaques, wedding keepsake boxes, milestone baby frames, and anniversary gifts.
+            </p>
+          </div>
+          <div class="pt-5 mt-4 border-t border-stone-800/80 flex items-center justify-between text-xs">
+            <span class="text-stone-500">Keepsakes • Engraving</span>
+            <a href="#custom-frame" class="text-accent-gold font-medium hover:underline flex items-center space-x-1">
+              <span>Customize</span>
+              <span>→</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FRAME COLLECTION (Dedicated Product Showcase Section) -->
+  <section id="frame-collection" class="py-24 bg-[#0B0B0C] relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto space-y-4 mb-12">
+        <div class="divider-gold-ornament">
+          <span class="text-xs uppercase tracking-widest text-accent-gold font-mono font-medium">Product Showcase</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-stone-100">
+          The Frame Collection
+        </h2>
+        <p class="text-sm sm:text-base text-stone-400 leading-relaxed">
+          Every frame is individually joined, hand-finished, and fitted with archival preservation glass to safeguard your life's most precious memories.
+        </p>
+      </div>
+
+      <!-- Filter Categories Bar (Horizontal Scrollable) -->
+      <div class="flex items-center justify-start lg:justify-center overflow-x-auto pb-6 mb-8 gap-2 no-scrollbar" id="frame-category-tabs">
+        <!-- Rendered by app.js -->
+      </div>
+
+      <!-- Products Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8" id="frame-products-grid">
+        <!-- Rendered dynamically from FRAME_PRODUCTS in app.js -->
+      </div>
+
+      <!-- Bottom Catalogue Action Banner -->
+      <div class="mt-16 bg-gradient-to-r from-[#171512] via-[#211B13] to-[#171512] border border-accent-gold/30 rounded-3xl p-8 md:p-12 text-center relative overflow-hidden">
+        <div class="max-w-2xl mx-auto space-y-4 relative z-10">
+          <h3 class="text-2xl md:text-3xl font-serif font-bold text-stone-100">
+            Have a Specific Dimension or Gallery Wall in Mind?
+          </h3>
+          <p class="text-sm text-stone-300">
+            Our atelier hand-builds custom frames to the exact millimeter, offering archival silk mats, custom brass plaques, and museum anti-reflective glass.
+          </p>
+          <div class="pt-2 flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a href="#custom-frame" class="btn-shimmer px-6 py-3 rounded-xl text-charcoal-dark font-bold text-xs uppercase tracking-wider">
+              Launch Custom Frame Studio
+            </a>
+            <a href="https://wa.me/919876543210?text=Hello%20Srovia%20Creation,%20I%20need%20a%20custom%20size%20frame%20consultation." target="_blank" class="px-6 py-3 rounded-xl border border-accent-gold/40 text-accent-gold hover:bg-accent-gold/10 text-xs font-semibold uppercase tracking-wider">
+              Chat With Artisan on WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CUSTOM FRAME SECTION ("Your Memory. Your Frame.") -->
+  <section id="custom-frame" class="py-24 bg-[#0E0E10] border-t border-b border-stone-800 relative bg-jaali-subtle">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+        <div class="divider-gold-ornament">
+          <span class="text-xs uppercase tracking-widest text-accent-gold font-mono font-medium">Interactive Studio</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-stone-100">
+          Your Memory. Your Frame.
+        </h2>
+        <p class="text-sm sm:text-base text-stone-400 leading-relaxed">
+          Configure your bespoke frame in real time. Choose from artisanal timbers and gold finishes, select custom mats, upload your photograph, and preview how it commands your wall.
+        </p>
+      </div>
+
+      <!-- Interactive Customizer Studio Container -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+        
+        <!-- Left: Interactive Wall & Frame Live Mockup (7 Cols) -->
+        <div class="lg:col-span-7 space-y-4">
+          
+          <!-- Wall Scene Switcher Buttons -->
+          <div class="flex items-center justify-between bg-[#161619] p-2 rounded-xl border border-stone-800 text-xs">
+            <span class="text-stone-400 font-medium pl-2">Wall Environment:</span>
+            <div class="flex space-x-1.5">
+              <button data-wall-scene="charcoal" class="active px-3 py-1.5 rounded-lg border border-accent-gold text-accent-gold text-xs transition-all">
+                Charcoal Luxury
+              </button>
+              <button data-wall-scene="ivory" class="px-3 py-1.5 rounded-lg border border-stone-800 text-stone-400 hover:text-white text-xs transition-all">
+                Ivory Living Room
+              </button>
+              <button data-wall-scene="studio" class="px-3 py-1.5 rounded-lg border border-stone-800 text-stone-400 hover:text-white text-xs transition-all">
+                Minimal Studio
+              </button>
+            </div>
+          </div>
+
+          <!-- The Live Wall Preview Stage -->
+          <div id="custom-wall-stage" class="wall-stage wall-charcoal-luxury transition-all duration-700 relative flex items-center justify-center p-8 md:p-14 overflow-hidden rounded-2xl min-h-[460px] md:min-h-[540px]">
+            
+            <!-- Soft Ambient Wall Spotlight -->
+            <div class="absolute -top-20 left-1/2 -translate-x-1/2 w-80 h-80 bg-accent-gold/15 rounded-full blur-[100px] pointer-events-none"></div>
+
+            <!-- The Custom Frame Object (Scales and responds live) -->
+            <div id="custom-frame-object" class="custom-frame-chassis frame-style-gold relative transition-all duration-500 max-w-sm sm:max-w-md w-full aspect-[4/5] flex items-center justify-center">
+              
+              <!-- Mat Board Container -->
+              <div id="custom-mat-board" class="w-full h-full flex flex-col items-center justify-center transition-all duration-300 relative overflow-hidden" style="background-color: #F8F5EE; padding: 28px;">
+                
+                <!-- Inner Image Frame Aperture with subtle bevel -->
+                <div class="relative w-full h-full overflow-hidden shadow-inner bg-black flex items-center justify-center">
+                  <img 
+                    id="custom-photo-display" 
+                    src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1000&q=80" 
+                    alt="Custom Framed Memory" 
+                    class="w-full h-full object-cover transition-all duration-300"
+                  />
+                  <!-- Glass Glare Reflection Layer -->
+                  <div class="absolute inset-0 bg-gradient-to-tr from-transparent via-white/10 to-transparent pointer-events-none"></div>
+                </div>
+
+                <!-- Gold Engraved Plaque on Mat Board -->
+                <div id="custom-plaque-display" class="custom-plaque-badge mt-3 text-center transition-all hidden">
+                  Priya & Aarav • 2024
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- Sample Photos & Photo Tools -->
+          <div class="bg-[#141416] p-4 rounded-xl border border-stone-800 flex flex-wrap items-center justify-between gap-3 text-xs">
+            <div class="flex items-center space-x-2">
+              <span class="text-stone-400">Sample Photos:</span>
+              <button data-sample-photo="wedding" class="px-2.5 py-1 bg-stone-800 hover:bg-stone-700 text-stone-200 rounded">Wedding</button>
+              <button data-sample-photo="heritage" class="px-2.5 py-1 bg-stone-800 hover:bg-stone-700 text-stone-200 rounded">Heritage</button>
+              <button data-sample-photo="family" class="px-2.5 py-1 bg-stone-800 hover:bg-stone-700 text-stone-200 rounded">Family</button>
+              <button data-sample-photo="art" class="px-2.5 py-1 bg-stone-800 hover:bg-stone-700 text-stone-200 rounded">Art</button>
+            </div>
+            
+            <div class="flex items-center space-x-2">
+              <span class="text-stone-400">Filter:</span>
+              <button data-photo-filter="none" class="px-2 py-0.5 border border-accent-gold text-accent-gold rounded text-[11px]">Original</button>
+              <button data-photo-filter="bw" class="px-2 py-0.5 border border-stone-700 text-stone-400 hover:text-white rounded text-[11px]">B&W</button>
+              <button data-photo-filter="sepia" class="px-2 py-0.5 border border-stone-700 text-stone-400 hover:text-white rounded text-[11px]">Sepia</button>
+              <button data-photo-filter="warm" class="px-2 py-0.5 border border-stone-700 text-stone-400 hover:text-white rounded text-[11px]">Warm</button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right: 5-Step Customization Panel (5 Cols) -->
+        <div class="lg:col-span-5 bg-[#141416] border border-stone-800 rounded-3xl p-6 sm:p-8 space-y-6 shadow-2xl">
+          
+          <div class="flex items-center justify-between border-b border-stone-800 pb-4">
+            <h3 class="text-xl font-serif font-bold text-stone-100">Bespoke Configurator</h3>
+            <span class="text-[11px] font-mono text-accent-gold">Step 1 to 5</span>
+          </div>
+
+          <!-- Step 1: Choose Frame Style -->
+          <div class="space-y-2.5">
+            <label class="text-xs font-semibold text-stone-300 uppercase tracking-wider block">1. Select Frame Style</label>
+            <div class="grid grid-cols-2 gap-2">
+              <button data-custom-style="gold-royale" class="active flex items-center space-x-2.5 p-2.5 rounded-xl border border-accent-gold bg-[#1A1A1E] text-left transition-all">
+                <span class="w-4 h-4 rounded-full bg-gradient-to-tr from-[#9B722B] via-[#D4AF37] to-[#FFF1B5] border border-accent-gold"></span>
+                <span class="text-xs font-medium text-stone-200">Swarna Gold</span>
+              </button>
+              <button data-custom-style="smoked-teak" class="flex items-center space-x-2.5 p-2.5 rounded-xl border border-stone-800 hover:border-accent-gold bg-[#1A1A1E] text-left transition-all">
+                <span class="w-4 h-4 rounded-full bg-[#5A3822] border border-[#7A4E2F]"></span>
+                <span class="text-xs font-medium text-stone-200">Smoked Teak</span>
+              </button>
+              <button data-custom-style="noir-charcoal" class="flex items-center space-x-2.5 p-2.5 rounded-xl border border-stone-800 hover:border-accent-gold bg-[#1A1A1E] text-left transition-all">
+                <span class="w-4 h-4 rounded-full bg-[#18181A] border border-stone-600"></span>
+                <span class="text-xs font-medium text-stone-200">Noir Charcoal</span>
+              </button>
+              <button data-custom-style="acrylic-float" class="flex items-center space-x-2.5 p-2.5 rounded-xl border border-stone-800 hover:border-accent-gold bg-[#1A1A1E] text-left transition-all">
+                <span class="w-4 h-4 rounded-full bg-sky-200/30 border border-sky-300"></span>
+                <span class="text-xs font-medium text-stone-200">Aura Acrylic</span>
+              </button>
+              <button data-custom-style="rosewood-heritage" class="col-span-2 flex items-center space-x-2.5 p-2.5 rounded-xl border border-stone-800 hover:border-accent-gold bg-[#1A1A1E] text-left transition-all">
+                <span class="w-4 h-4 rounded-full bg-[#3D1D16] border border-[#5C261A]"></span>
+                <span class="text-xs font-medium text-stone-200">Heritage Rosewood with Brass Fillet</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Step 2: Select Size -->
+          <div class="space-y-2.5">
+            <label class="text-xs font-semibold text-stone-300 uppercase tracking-wider block">2. Select Frame Size</label>
+            <div class="grid grid-cols-3 gap-2">
+              <button data-custom-size='8x10"' class="p-2 rounded-lg text-xs border border-stone-800 bg-[#1A1A1E] text-stone-300 hover:border-accent-gold transition-all">8x10"</button>
+              <button data-custom-size='12x18"' class="active p-2 rounded-lg text-xs bg-gold-gradient text-charcoal-dark font-bold transition-all">12x18"</button>
+              <button data-custom-size='16x24"' class="p-2 rounded-lg text-xs border border-stone-800 bg-[#1A1A1E] text-stone-300 hover:border-accent-gold transition-all">16x24"</button>
+              <button data-custom-size='20x30"' class="p-2 rounded-lg text-xs border border-stone-800 bg-[#1A1A1E] text-stone-300 hover:border-accent-gold transition-all">20x30"</button>
+              <button data-custom-size='24x36"' class="p-2 rounded-lg text-xs border border-stone-800 bg-[#1A1A1E] text-stone-300 hover:border-accent-gold transition-all">24x36"</button>
+              <button data-custom-size='Custom Dimension' class="p-2 rounded-lg text-xs border border-stone-800 bg-[#1A1A1E] text-accent-gold hover:border-accent-gold transition-all">Custom</button>
+            </div>
+          </div>
+
+          <!-- Step 3: Upload Photo -->
+          <div class="space-y-2.5">
+            <label class="text-xs font-semibold text-stone-300 uppercase tracking-wider block">3. Upload Your Photograph</label>
+            <label class="flex flex-col items-center justify-center border-2 border-dashed border-stone-700 hover:border-accent-gold rounded-xl p-4 cursor-pointer bg-stone-900/60 transition-colors">
+              <svg class="w-6 h-6 text-accent-gold mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"/></svg>
+              <span class="text-xs text-stone-200 font-medium">Click to upload your memory</span>
+              <span class="text-[10px] text-stone-400">JPG, PNG, HEIC up to 50MB</span>
+              <input type="file" id="custom-photo-upload" accept="image/*" class="hidden">
+            </label>
+          </div>
+
+          <!-- Step 4: Choose Mat Board & Plaque Customization -->
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <label class="text-xs font-semibold text-stone-300 uppercase tracking-wider">4. Mat Board & Customization</label>
+              <span id="mat-width-label" class="text-xs text-accent-gold font-mono">2.0 inches</span>
+            </div>
+
+            <!-- Mat color swatches -->
+            <div class="flex items-center space-x-2">
+              <button data-custom-mat="ivory" title="Ivory White" class="w-7 h-7 rounded-full bg-[#F8F5EE] ring-2 ring-accent-gold border border-stone-300"></button>
+              <button data-custom-mat="black" title="Onyx Black" class="w-7 h-7 rounded-full bg-[#161617] border border-stone-700"></button>
+              <button data-custom-mat="crimson" title="Royal Velvet Maroon" class="w-7 h-7 rounded-full bg-[#4A121A] border border-stone-700"></button>
+              <button data-custom-mat="sand" title="Desert Sand" class="w-7 h-7 rounded-full bg-[#E4D6C4] border border-stone-700"></button>
+              <button data-custom-mat="none" title="No Mat" class="text-[10px] text-stone-400 px-2 py-1 bg-stone-800 rounded">No Mat</button>
+            </div>
+
+            <!-- Mat width slider -->
+            <div>
+              <input type="range" id="custom-mat-width" min="14" max="42" value="28" class="w-full accent-accent-gold cursor-pointer">
+            </div>
+
+            <!-- Gold Plaque Text Option -->
+            <div>
+              <label class="text-[11px] text-stone-400 block mb-1">Engraved Gold Plaque Text (Optional):</label>
+              <input type="text" id="custom-plaque-text" placeholder="e.g. The Sharma Family • Established 2024" class="w-full bg-[#18181B] border border-stone-800 rounded-lg px-3 py-2 text-xs text-stone-200 focus:outline-none focus:border-accent-gold">
+            </div>
+          </div>
+
+          <!-- Specifications Summary Box -->
+          <div id="custom-summary-specs" class="bg-[#18181B] p-3.5 rounded-xl border border-stone-800">
+            <!-- Rendered by customizer.js -->
+          </div>
+
+          <!-- Step 5: Send Enquiry & Customer Info -->
+          <div class="space-y-3 pt-2">
+            <label class="text-xs font-semibold text-stone-300 uppercase tracking-wider block">5. Send Custom Quote Request</label>
+            <div class="grid grid-cols-2 gap-2">
+              <input id="custom-cust-name" type="text" placeholder="Your Name" class="bg-[#18181B] border border-stone-800 rounded-lg px-3 py-2 text-xs text-stone-200 focus:outline-none focus:border-accent-gold">
+              <input id="custom-cust-phone" type="tel" placeholder="Phone Number" class="bg-[#18181B] border border-stone-800 rounded-lg px-3 py-2 text-xs text-stone-200 focus:outline-none focus:border-accent-gold">
+            </div>
+            <textarea id="custom-cust-notes" rows="2" placeholder="Any specific requirements, delivery location, or timeline..." class="w-full bg-[#18181B] border border-stone-800 rounded-lg px-3 py-2 text-xs text-stone-200 focus:outline-none focus:border-accent-gold"></textarea>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-2">
+              <button id="custom-quote-submit" class="w-full py-3 px-4 rounded-xl bg-gold-gradient text-charcoal-dark font-bold text-xs uppercase tracking-wider shadow-lg hover:brightness-110 transition-all text-center">
+                Get Custom Quote
+              </button>
+              <button id="custom-whatsapp-enquire" class="w-full py-3 px-4 rounded-xl bg-[#25D366]/20 hover:bg-[#25D366] text-[#25D366] hover:text-white border border-[#25D366]/40 font-semibold text-xs uppercase tracking-wider transition-all flex items-center justify-center space-x-1.5">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                <span>WhatsApp Quote</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PORTFOLIO SECTION (Filterable Grid & Case Studies) -->
+  <section id="portfolio" class="py-24 bg-[#0B0B0C] relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto space-y-4 mb-12">
+        <div class="divider-gold-ornament">
+          <span class="text-xs uppercase tracking-widest text-accent-gold font-mono font-medium">Selected Works</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-stone-100">
+          Crafted Case Studies
+        </h2>
+        <p class="text-sm sm:text-base text-stone-400 leading-relaxed">
+          Explore our multidisciplinary portfolio spanning brand identities, high-impact poster art, digital UI/UX experiences, and tactile print design.
+        </p>
+      </div>
+
+      <!-- Categories Filter Tabs -->
+      <div class="flex items-center justify-start lg:justify-center overflow-x-auto pb-4 mb-10 gap-2 no-scrollbar" id="portfolio-category-tabs">
+        <!-- Rendered by app.js -->
+      </div>
+
+      <!-- Portfolio Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="portfolio-grid">
+        <!-- Rendered dynamically from PORTFOLIO_PROJECTS in app.js -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION ("Where Creativity Meets Craft.") -->
+  <section id="about" class="py-24 bg-[#0E0E10] border-t border-b border-stone-800 relative bg-mandala-pattern">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left: Studio Image / Artisan Composition -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative rounded-3xl overflow-hidden border border-accent-gold/40 shadow-2xl bg-stone-900 aspect-[4/5]">
+            <img 
+              src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=900&q=80" 
+              alt="Artisan Craftsmanship at Srovia Creation" 
+              class="w-full h-full object-cover"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#0E0E10] via-transparent to-transparent opacity-80"></div>
+            
+            <div class="absolute bottom-6 left-6 right-6 p-5 bg-[#141418]/90 backdrop-blur-md rounded-2xl border border-stone-800">
+              <div class="text-xs font-mono text-accent-gold uppercase tracking-wider mb-1">Srovia Creation Atelier</div>
+              <div class="text-sm font-serif font-bold text-stone-100">“Every line drawn, every joint joined, carries our pledge to permanence.”</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Narrative & 4 Pillars -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center space-x-2 text-xs font-mono text-accent-gold uppercase tracking-widest">
+            <span>✦</span>
+            <span>Studio Philosophy</span>
+          </div>
+
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-stone-100 leading-tight">
+            Where Creativity Meets Craft.
+          </h2>
+
+          <p class="text-base text-stone-300 leading-relaxed">
+            At Srovia Creation, we believe design is not merely decoration—it is the translation of emotion, memory, and purpose into enduring form. Born from a reverence for timeless Indian artistry and sharpened by modern digital disciplines, our studio operates at the rare intersection of brand strategy, UI/UX design, and heirloom-grade framing craftsmanship.
+          </p>
+
+          <p class="text-sm text-stone-400 leading-relaxed">
+            Whether shaping the brand identity for a progressive modern enterprise or encasing a family's most sacred wedding portrait in hand-finished gold leaf, we apply the exact same meticulous care: uncompromising precision, archival materials, and genuine artistic soul.
+          </p>
+
+          <!-- 4 Pillars Grid -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+            
+            <div class="p-4 rounded-xl bg-[#141416] border border-stone-800 space-y-1.5">
+              <div class="flex items-center space-x-2 text-accent-gold text-xs font-serif font-bold uppercase">
+                <span>✦</span>
+                <span>Indian Aesthetic Soul</span>
+              </div>
+              <p class="text-xs text-stone-400">Harmonizing traditional heritage motifs with clean, global modern minimalism.</p>
+            </div>
+
+            <div class="p-4 rounded-xl bg-[#141416] border border-stone-800 space-y-1.5">
+              <div class="flex items-center space-x-2 text-accent-gold text-xs font-serif font-bold uppercase">
+                <span>✦</span>
+                <span>Archival Mastery</span>
+              </div>
+              <p class="text-xs text-stone-400">100% acid-free cotton mats, UV99 museum glass, and sustainably harvested hardwoods.</p>
+            </div>
+
+            <div class="p-4 rounded-xl bg-[#141416] border border-stone-800 space-y-1.5">
+              <div class="flex items-center space-x-2 text-accent-gold text-xs font-serif font-bold uppercase">
+                <span>✦</span>
+                <span>Pixel-Perfect Digital Craft</span>
+              </div>
+              <p class="text-xs text-stone-400">High-performance digital products engineered for clarity, conversion, and elegance.</p>
+            </div>
+
+            <div class="p-4 rounded-xl bg-[#141416] border border-stone-800 space-y-1.5">
+              <div class="flex items-center space-x-2 text-accent-gold text-xs font-serif font-bold uppercase">
+                <span>✦</span>
+                <span>Tailored Consultation</span>
+              </div>
+              <p class="text-xs text-stone-400">Direct artisan collaboration from initial concept to safe nationwide delivery.</p>
+            </div>
+
+          </div>
+
+          <div class="pt-4">
+            <a href="#contact" class="btn-shimmer inline-block px-8 py-3.5 rounded-xl text-charcoal-dark font-bold text-xs uppercase tracking-wider shadow-lg">
+              Collaborate With Our Studio
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- GALLERY (Curated Visual Mosaic with Lightbox) -->
+  <section id="gallery" class="py-24 bg-[#0B0B0C] relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto space-y-4 mb-12">
+        <div class="divider-gold-ornament">
+          <span class="text-xs uppercase tracking-widest text-accent-gold font-mono font-medium">Visual Gallery</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-stone-100">
+          The Srovia Gallery
+        </h2>
+        <p class="text-sm sm:text-base text-stone-400 leading-relaxed">
+          A visual collection of premium frames, interior wall installations, brand packaging, posters, UI/UX screens, and custom keepsakes.
+        </p>
+      </div>
+
+      <!-- Category Filter Pills -->
+      <div class="flex items-center justify-start lg:justify-center overflow-x-auto pb-4 mb-8 gap-2 no-scrollbar">
+        <button data-gallery-filter="all" class="gallery-filter-btn px-4 py-2 rounded-full text-xs font-medium bg-gold-gradient text-charcoal-dark font-bold shadow-lg transition-all">All Pieces</button>
+        <button data-gallery-filter="frames" class="gallery-filter-btn px-4 py-2 rounded-full text-xs font-medium bg-[#18181B] text-stone-300 hover:text-accent-gold border border-stone-800 transition-all">Frames</button>
+        <button data-gallery-filter="wall-displays" class="gallery-filter-btn px-4 py-2 rounded-full text-xs font-medium bg-[#18181B] text-stone-300 hover:text-accent-gold border border-stone-800 transition-all">Wall Displays</button>
+        <button data-gallery-filter="branding" class="gallery-filter-btn px-4 py-2 rounded-full text-xs font-medium bg-[#18181B] text-stone-300 hover:text-accent-gold border border-stone-800 transition-all">Branding & Packaging</button>
+        <button data-gallery-filter="posters" class="gallery-filter-btn px-4 py-2 rounded-full text-xs font-medium bg-[#18181B] text-stone-300 hover:text-accent-gold border border-stone-800 transition-all">Posters</button>
+        <button data-gallery-filter="uiux" class="gallery-filter-btn px-4 py-2 rounded-full text-xs font-medium bg-[#18181B] text-stone-300 hover:text-accent-gold border border-stone-800 transition-all">UI/UX Screens</button>
+        <button data-gallery-filter="gifts" class="gallery-filter-btn px-4 py-2 rounded-full text-xs font-medium bg-[#18181B] text-stone-300 hover:text-accent-gold border border-stone-800 transition-all">Personalized Gifts</button>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4" id="gallery-mosaic-grid">
+        <!-- Rendered dynamically from GALLERY_ITEMS in app.js -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TESTIMONIAL SECTION (Clean, Editable Placeholder Content) -->
+  <section class="py-24 bg-[#0E0E10] border-t border-b border-stone-800 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+        <div class="divider-gold-ornament">
+          <span class="text-xs uppercase tracking-widest text-accent-gold font-mono font-medium">Client Words</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-stone-100">
+          Client Reflections
+        </h2>
+        <p class="text-xs uppercase tracking-widest text-stone-500 font-mono">
+          [Editable Placeholder Content • Ready For Real Client Testimonials]
+        </p>
+      </div>
+
+      <!-- 3 Clean Testimonial Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Testimonial 1 -->
+        <div class="bg-[#141416] p-8 rounded-2xl border border-stone-800 hover:border-accent-gold/40 transition-colors flex flex-col justify-between space-y-6">
+          <div class="space-y-4">
+            <div class="flex text-accent-gold text-sm tracking-widest">★★★★★</div>
+            <p class="text-sm text-stone-300 italic leading-relaxed">
+              “The Swarna Royale gold frame created for our wedding portrait was breathtaking. The archival cotton paper and hand-gilded finish make it the centerpiece of our living room. Meticulous craftsmanship.”
+            </p>
+          </div>
+          <div class="pt-4 border-t border-stone-800 flex items-center space-x-3">
+            <div class="w-10 h-10 rounded-full bg-stone-800 border border-accent-gold/40 flex items-center justify-center text-xs font-serif font-bold text-accent-gold">
+              AK
+            </div>
+            <div>
+              <div class="text-sm font-semibold text-stone-200">Aarav & Kavya</div>
+              <div class="text-[11px] text-stone-500">Heritage Wedding Memoir Frame</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="bg-[#141416] p-8 rounded-2xl border border-stone-800 hover:border-accent-gold/40 transition-colors flex flex-col justify-between space-y-6">
+          <div class="space-y-4">
+            <div class="flex text-accent-gold text-sm tracking-widest">★★★★★</div>
+            <p class="text-sm text-stone-300 italic leading-relaxed">
+              “Srovia Creation handled our entire brand identity, packaging, and digital website design. Their blend of traditional Indian aesthetic sensibility with modern luxury execution is truly unmatched.”
+            </p>
+          </div>
+          <div class="pt-4 border-t border-stone-800 flex items-center space-x-3">
+            <div class="w-10 h-10 rounded-full bg-stone-800 border border-accent-gold/40 flex items-center justify-center text-xs font-serif font-bold text-accent-gold">
+              RM
+            </div>
+            <div>
+              <div class="text-sm font-semibold text-stone-200">Rajesh Mehta</div>
+              <div class="text-[11px] text-stone-500">Luxury Brand Identity Client</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="bg-[#141416] p-8 rounded-2xl border border-stone-800 hover:border-accent-gold/40 transition-colors flex flex-col justify-between space-y-6">
+          <div class="space-y-4">
+            <div class="flex text-accent-gold text-sm tracking-widest">★★★★★</div>
+            <p class="text-sm text-stone-300 italic leading-relaxed">
+              “We ordered a 9-piece family heritage gallery wall in solid smoked teakwood. The alignment, precision mitres, and anti-glare museum glass protect our grandparents’ photographs with perfection.”
+            </p>
+          </div>
+          <div class="pt-4 border-t border-stone-800 flex items-center space-x-3">
+            <div class="w-10 h-10 rounded-full bg-stone-800 border border-accent-gold/40 flex items-center justify-center text-xs font-serif font-bold text-accent-gold">
+              SN
+            </div>
+            <div>
+              <div class="text-sm font-semibold text-stone-200">Sneha Nambiar</div>
+              <div class="text-[11px] text-stone-500">Family Legacy Gallery Wall</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION ("Let’s Create Something Beautiful.") -->
+  <section id="contact" class="py-24 bg-[#0B0B0C] relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+        <div class="divider-gold-ornament">
+          <span class="text-xs uppercase tracking-widest text-accent-gold font-mono font-medium">Direct Atelier Contact</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-stone-100">
+          Let’s Create Something Beautiful.
+        </h2>
+        <p class="text-sm sm:text-base text-stone-400 leading-relaxed">
+          Tell us about your brand vision, digital project, or bespoke framing requirements. We provide personalized consultations and nationwide delivery.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        
+        <!-- Left: Studio Details & WhatsApp Direct (5 Cols) -->
+        <div class="lg:col-span-5 space-y-6">
+          <div class="bg-[#141416] p-8 rounded-3xl border border-stone-800 space-y-6">
+            <h3 class="text-xl font-serif font-bold text-stone-100">Studio Consultations</h3>
+            <p class="text-xs text-stone-400 leading-relaxed">
+              Available for bespoke brand commissions, digital design engagements, and custom framing orders across India and globally.
+            </p>
+
+            <div class="space-y-4 text-xs">
+              <div class="flex items-start space-x-3.5">
+                <div class="p-2 rounded-lg bg-stone-800 text-accent-gold mt-0.5">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                </div>
+                <div>
+                  <div class="text-stone-400 uppercase tracking-wider text-[10px]">Direct Phone & WhatsApp</div>
+                  <a href="https://wa.me/919876543210" target="_blank" class="font-semibold text-stone-200 hover:text-accent-gold text-sm">+91 98765 43210</a>
+                </div>
+              </div>
+
+              <div class="flex items-start space-x-3.5">
+                <div class="p-2 rounded-lg bg-stone-800 text-accent-gold mt-0.5">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                </div>
+                <div>
+                  <div class="text-stone-400 uppercase tracking-wider text-[10px]">Studio Email</div>
+                  <a href="mailto:hello@sroviacreation.com" class="font-semibold text-stone-200 hover:text-accent-gold text-sm">hello@sroviacreation.com</a>
+                </div>
+              </div>
+
+              <div class="flex items-start space-x-3.5">
+                <div class="p-2 rounded-lg bg-stone-800 text-accent-gold mt-0.5">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                </div>
+                <div>
+                  <div class="text-stone-400 uppercase tracking-wider text-[10px]">Studio Working Hours</div>
+                  <div class="font-medium text-stone-300">Mon - Sat: 10:00 AM – 8:00 PM IST</div>
+                </div>
+              </div>
+
+              <div class="flex items-start space-x-3.5">
+                <div class="p-2 rounded-lg bg-stone-800 text-accent-gold mt-0.5">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                </div>
+                <div>
+                  <div class="text-stone-400 uppercase tracking-wider text-[10px]">Studio Location</div>
+                  <div class="font-medium text-stone-300">Srovia Creation Atelier, India</div>
+                  <div class="text-[11px] text-stone-500">By Appointment & Online Pan-India Delivery</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-4 border-t border-stone-800">
+              <a href="https://wa.me/919876543210?text=Hello%20Srovia%20Creation,%20I%20would%20like%20to%20discuss%20a%20project." target="_blank" class="w-full py-3 rounded-xl bg-[#25D366]/20 hover:bg-[#25D366] text-[#25D366] hover:text-white border border-[#25D366]/40 text-xs font-bold uppercase tracking-wider flex items-center justify-center space-x-2 transition-all">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                <span>Instant WhatsApp Chat</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Inquiry Form (7 Cols) -->
+        <div class="lg:col-span-7 bg-[#141416] p-8 sm:p-10 rounded-3xl border border-stone-800 shadow-2xl">
+          <form id="main-contact-form" class="space-y-5">
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="contact-name" class="block text-xs uppercase tracking-wider text-stone-400 font-medium mb-1.5">Your Name *</label>
+                <input type="text" id="contact-name" required placeholder="e.g. Vikramaditya Rao" class="w-full bg-[#18181B] border border-stone-800 rounded-xl px-4 py-3 text-xs text-stone-200 focus:outline-none focus:border-accent-gold transition-colors" />
+              </div>
+              <div>
+                <label for="contact-phone" class="block text-xs uppercase tracking-wider text-stone-400 font-medium mb-1.5">Phone / WhatsApp *</label>
+                <input type="tel" id="contact-phone" required placeholder="+91 9363804798" class="w-full bg-[#18181B] border border-stone-800 rounded-xl px-4 py-3 text-xs text-stone-200 focus:outline-none focus:border-accent-gold transition-colors" />
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="contact-email" class="block text-xs uppercase tracking-wider text-stone-400 font-medium mb-1.5">Email Address</label>
+                <input type="email" id="contact-email" placeholder="vikram@example.com" class="w-full bg-[#18181B] border border-stone-800 rounded-xl px-4 py-3 text-xs text-stone-200 focus:outline-none focus:border-accent-gold transition-colors" />
+              </div>
+              <div>
+                <label for="contact-service" class="block text-xs uppercase tracking-wider text-stone-400 font-medium mb-1.5">Service of Interest *</label>
+                <select id="contact-service" class="w-full bg-[#18181B] border border-stone-800 rounded-xl px-4 py-3 text-xs text-stone-200 focus:outline-none focus:border-accent-gold transition-colors">
+                  <option value="Branding & Logo Design">Branding & Logo Design</option>
+                  <option value="Graphic Design">Graphic Design & Collateral</option>
+                  <option value="UI/UX Design">UI/UX & Mobile Apps</option>
+                  <option value="Website Design & Dev">Website Design & Development</option>
+                  <option value="Motion Graphics">Motion Graphics & Logo Animation</option>
+                  <option value="Social Media Design">Social Media Creatives</option>
+                  <option value="Premium Photo Frames" selected>Premium Photo Frames</option>
+                  <option value="Custom Frame Studio">Custom Frame Studio Order</option>
+                  <option value="Personalized Gifts">Personalized Keepsake Gifts</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label for="contact-message" class="block text-xs uppercase tracking-wider text-stone-400 font-medium mb-1.5">Project Details & Requirements *</label>
+              <textarea id="contact-message" rows="4" required placeholder="Describe your project, frame size, photo type, or brand identity vision..." class="w-full bg-[#18181B] border border-stone-800 rounded-xl px-4 py-3 text-xs text-stone-200 focus:outline-none focus:border-accent-gold transition-colors"></textarea>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+              <button type="submit" class="btn-shimmer w-full py-4 rounded-xl text-charcoal-dark font-bold text-xs uppercase tracking-wider shadow-xl">
+                Send Enquiry
+              </button>
+              <button type="button" id="contact-whatsapp-direct" class="w-full py-4 rounded-xl bg-[#25D366]/20 hover:bg-[#25D366] text-[#25D366] hover:text-white border border-[#25D366]/40 font-semibold text-xs uppercase tracking-wider transition-all flex items-center justify-center space-x-2">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                <span>Chat on WhatsApp</span>
+              </button>
+            </div>
+
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#070709] border-t border-stone-800/80 pt-16 pb-12 text-stone-400">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10">
+        
+        <!-- Brand Info -->
+        <div class="lg:col-span-4 space-y-4">
+          <div class="h-12 flex items-center">
+            <img src="assets/logo.svg" alt="SROVIA CREATION" class="h-10 w-auto" />
+          </div>
+          <div class="text-xs font-mono uppercase tracking-widest text-accent-gold">
+            Design • Digital • Print
+          </div>
+          <p class="text-xs text-stone-400 leading-relaxed pr-6">
+            Srovia Creation is an Indian creative studio dedicated to transcendent brand identities, human-first digital experiences, and heirloom-grade picture frames.
+          </p>
+        </div>
+
+        <!-- Quick Links: Services -->
+        <div class="lg:col-span-3 space-y-3 text-xs">
+          <h4 class="font-serif font-bold text-stone-200 uppercase tracking-wider text-sm">Services</h4>
+          <ul class="space-y-2">
+            <li><a href="#services" class="hover:text-accent-gold transition-colors">Branding & Logo Design</a></li>
+            <li><a href="#services" class="hover:text-accent-gold transition-colors">Graphic & Print Design</a></li>
+            <li><a href="#services" class="hover:text-accent-gold transition-colors">UI/UX & Mobile App Design</a></li>
+            <li><a href="#services" class="hover:text-accent-gold transition-colors">Website Design & Development</a></li>
+            <li><a href="#services" class="hover:text-accent-gold transition-colors">Motion Graphics & Animation</a></li>
+            <li><a href="#services" class="hover:text-accent-gold transition-colors">Personalized Gifts</a></li>
+          </ul>
+        </div>
+
+        <!-- Quick Links: Frame Showcase -->
+        <div class="lg:col-span-2 space-y-3 text-xs">
+          <h4 class="font-serif font-bold text-stone-200 uppercase tracking-wider text-sm">Frames</h4>
+          <ul class="space-y-2">
+            <li><a href="#frame-collection" class="hover:text-accent-gold transition-colors">Wooden Frames</a></li>
+            <li><a href="#frame-collection" class="hover:text-accent-gold transition-colors">Premium Gold Frames</a></li>
+            <li><a href="#frame-collection" class="hover:text-accent-gold transition-colors">Wedding & Couple</a></li>
+            <li><a href="#frame-collection" class="hover:text-accent-gold transition-colors">Acrylic Float Frames</a></li>
+            <li><a href="#frame-collection" class="hover:text-accent-gold transition-colors">Family Legacy</a></li>
+            <li><a href="#custom-frame" class="hover:text-accent-gold transition-colors text-accent-gold">Custom Frame Studio</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact & Socials -->
+        <div class="lg:col-span-3 space-y-3 text-xs">
+          <h4 class="font-serif font-bold text-stone-200 uppercase tracking-wider text-sm">Connect</h4>
+          <ul class="space-y-2 text-stone-400">
+            <li><a href="https://wa.me/919363804798" target="_blank" class="hover:text-[#25D366] transition-colors flex items-center space-x-1.5"><span>WhatsApp: +91 9363804798</span></a></li>
+            <li><a href="mailto: sroviacreation@gmail.com" class="hover:text-accent-gold transition-colors">Email: sroviacreation@gmail.com</a></li>
+            <li><a href="https://instagram.com" target="_blank" class="hover:text-accent-gold transition-colors">Instagram: @srovia.creation</a></li>
+            <li><a href="#portfolio" class="hover:text-accent-gold transition-colors">Case Studies Portfolio</a></li>
+            <li><a href="#about" class="hover:text-accent-gold transition-colors">About Our Atelier</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Copyright Bottom Bar -->
+      <div class="pt-8 border-t border-stone-800/60 flex flex-col sm:flex-row items-center justify-between text-xs text-stone-500 gap-4">
+        <div>
+          © 2026 SROVIA CREATION. All rights reserved. Crafted with elegance and purpose.
+        </div>
+        <div class="flex space-x-6 text-[11px]">
+          <a href="#hero" class="hover:text-accent-gold transition-colors">Back to Top ↑</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       MODALS SYSTEM
+       ========================================================================== -->
+
+  <!-- 1. PRODUCT DETAIL MODAL -->
+  <div id="product-detail-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 lg:p-10 hidden">
+    <!-- Backdrop -->
+    <div id="product-detail-backdrop" class="fixed inset-0 bg-black/85 backdrop-blur-md"></div>
+    
+    <!-- Modal Window -->
+    <div class="relative bg-[#141416] border border-accent-gold/40 rounded-3xl w-full max-w-5xl max-h-[90vh] overflow-y-auto z-10 p-6 md:p-10 shadow-2xl shadow-black animate-fade-in text-stone-200">
+      <button id="close-product-detail-btn" class="absolute top-6 right-6 text-stone-400 hover:text-white p-2 rounded-full bg-stone-800/80 hover:bg-stone-700 transition-colors">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+
+      <!-- Dynamic Content Body -->
+      <div id="product-detail-modal-body">
+        <!-- Rendered by app.js openProductDetail() -->
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. CASE STUDY MODAL -->
+  <div id="case-study-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 lg:p-10 hidden">
+    <div id="case-study-backdrop" class="fixed inset-0 bg-black/85 backdrop-blur-md"></div>
+    <div class="relative bg-[#141416] border border-accent-gold/40 rounded-3xl w-full max-w-4xl max-h-[90vh] overflow-y-auto z-10 p-6 md:p-10 shadow-2xl animate-fade-in text-stone-200">
+      <button id="close-case-study-btn" class="absolute top-6 right-6 text-stone-400 hover:text-white p-2 rounded-full bg-stone-800/80 hover:bg-stone-700 transition-colors">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+      <div id="case-study-modal-body">
+        <!-- Rendered by app.js openCaseStudy() -->
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. GALLERY LIGHTBOX MODAL -->
+  <div id="gallery-lightbox-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/95 backdrop-blur-xl hidden">
+    <button id="close-lightbox-btn" class="absolute top-6 right-6 text-stone-400 hover:text-white p-3 z-20">
+      <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+    </button>
+    
+    <button id="lightbox-prev-btn" class="absolute left-4 top-1/2 -translate-y-1/2 text-stone-400 hover:text-accent-gold p-3 z-20">
+      <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+    </button>
+    <button id="lightbox-next-btn" class="absolute right-4 top-1/2 -translate-y-1/2 text-stone-400 hover:text-accent-gold p-3 z-20">
+      <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+    </button>
+
+    <div class="max-w-4xl max-h-[85vh] flex flex-col items-center justify-center p-2 z-10">
+      <img id="lightbox-image" src="" alt="Gallery Image" class="max-h-[70vh] w-auto max-w-full rounded-2xl shadow-2xl border border-stone-800 object-contain">
+      <div class="mt-4 text-center space-y-1">
+        <h4 id="lightbox-title" class="text-base font-serif font-bold text-stone-100"></h4>
+        <p id="lightbox-caption" class="text-xs text-stone-400"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/frames-data.js"></script>
+  <script src="js/portfolio-data.js"></script>
+  <script src="js/customizer.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
